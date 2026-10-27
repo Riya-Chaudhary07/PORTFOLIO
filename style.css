@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #26354a;
+}
+
+.navbar {
+    background-color: #142744;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar h2 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.navbar span {
+    color: #259685;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: #31bba6;
+}
+
+.home {
+    padding: 75px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    background: linear-gradient(120deg, #f4f7fb, #e5f3f2);
+}
+
+.intro {
+    max-width: 570px;
+}
+
+.home h1 {
+    color: #142744;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.home h1 span {
+    color: #21958d;
+}
+
+.home h3 {
+    color: #52657e;
+}
+
+.home p {
+    line-height: 1.8;
+}
+
+.small {
+    color: #208a83;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+
+.photo img {
+    width: 240px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid white;
+    box-shadow: 0 8px 25px rgba(20, 39, 68, 0.15);
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #219991;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #116b66;
+    transform: translateY(-2px);
+}
+
+.section {
+    padding: 55px 10%;
+    text-align: center;
+    scroll-margin-top: 20px;
+}
+
+.section h2 {
+    color: #142744;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 800px;
+    margin: 12px auto;
+    line-height: 1.8;
+}
+
+.light {
+    background-color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.card {
+    background-color: white;
+    padding: 22px;
+    margin: 0;
+    border: 1px solid #dce4ee;
+    border-radius: 12px;
+    flex: 1 1 180px;
+    max-width: 300px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(20, 39, 68, 0.10);
+    border-color: #2a9a89;
+}
+
+.card h3 {
+    color: #2c938c;
+    margin-top: 5px;
+}
+
+.card p {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.light .card {
+    background-color: #f4f7fb;
+}
+
+/* Education Card */
+#education .card {
+    margin: auto;
+    max-width: 500px;
+}
+
+.contact-box {
+    max-width: 500px;
+    margin: 25px auto 0;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dce4ee;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 5px 18px rgba(20, 39, 68, 0.06);
+}
+
+.contact-box p {
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.contact-box a {
+    color: #2f9089;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #142744;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.footer a {
+    color: #45c4b0;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 5%;
+    }
+
+    .links {
+        text-align: center;
+        line-height: 2.2;
+    }
+
+    .links a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 45px 7%;
+        gap: 25px;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .photo img {
+        width: 200px;
+        height: 240px;
+    }
+
+    .section {
+        padding: 40px 7%;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .contact-box {
+        padding: 18px;
+    }
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 9px 15px;
+    background-color: #298882;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    background-color: #142744;
+}
+
